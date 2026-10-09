@@ -45,7 +45,7 @@ TIMER
 ======================================== */
 
 const startDate =
-new Date("August 10, 2026 00:00:00");
+new Date("August 10, 2026 00:00:01");
 
 let timerStarted = false;
 let timerInterval = null;
