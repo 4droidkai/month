@@ -11,16 +11,6 @@ if (passwordUnlocked !== "true") {
 
 } else {
 
-    /*
-     * Consume the permission.
-     *
-     * This means:
-     * index → password → home
-     *
-     * but refreshing home.html
-     * requires the password again.
-     */
-
     sessionStorage.removeItem(
         "passwordUnlocked"
     );
@@ -55,7 +45,7 @@ TIMER
 ======================================== */
 
 const startDate =
-new Date("August 10, 2026 00:00:00");
+new Date("August 9, 2026 15:03:00");
 
 let timerStarted = false;
 let timerInterval = null;
