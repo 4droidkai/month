@@ -1619,6 +1619,41 @@ body.section-open {
     transform: rotate(-3deg);
 }
 
+@media (max-width: 768px) {
+    .memories .memories-grid,
+    .memories .fullscreen-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+        padding: 12px;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+
+    .memories .photo {
+        width: 100%;
+        height: 90px; 
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .memories .photo img,
+    .memories .photo video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .memory-viewer-card {
+        width: 90vw;
+        max-height: 85vh;
+        padding: 16px;
+    }
+
+    .memory-viewer-media {
+        max-height: 250px;
+    }
+}
 
 /* =========================
    LITTLE THINGS
